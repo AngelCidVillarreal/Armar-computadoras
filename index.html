@@ -5,84 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COMPUTER CENTER</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-<style>
-    body{
-        background-color: black;
-        font-family: Arial, sans-serif;
-        margin: 20px;
-    }
-    h1{
-        text-align: center;
-        color: rgb(212, 239, 255);
-    }
-    h2{
-        text-align: center;
-        color: aqua;
-    }
-    .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-        }
-
-        form > div {
-            margin-bottom: 20px;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #fafafa;
-        }
-        label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 5px;
-            color: #000000;
-        }
-        select, button {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box; /* Asegura que el padding no cambie el ancho total */
-        }
-        .accesorios-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 10px;
-        }
-        .accesorios-grid label {
-            display: flex;
-            align-items: center;
-            font-weight: normal;
-            margin-bottom: 0;
-        }
-        .accesorios-grid input[type="checkbox"] {
-            margin-right: 8px;
-            width: auto;
-        }
-        button {
-            background-color: #007bff;
-            color: white;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            padding-top: 15px;
-            border-top: 1px solid #ddd;
-            font-size: 0.9em;
-            color: #00ccff;
-        }
-    </style>
-</style>
 <body>
     <H1>Computer center</H1>
     <h2>"Diseña y configura tu propia computadora personal de videojuegos"</h2>
@@ -166,6 +90,10 @@
                 <label><input type="checkbox" name="accesorio[]" value="Caja_herramientas"> Caja de herramientas</label>
             </div>
         </div>
+                <div>
+            <label>TOTAL</label>
+            <input type="text" id="costo_total" value="$0" readonly style="font-weight: bold; font-size: 1.2em; background-color: #e9ecef;">
+        </div>
         <button type="submit">Calcular Total</button>
 
     </form>
@@ -174,5 +102,6 @@
         Elaborado por:Angel Emilio Cid Villarreal· © 2025
     </footer>
 </div>
+<script src="index.js"></script>
 </body>
 </html>
